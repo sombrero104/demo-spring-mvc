@@ -1,6 +1,10 @@
 
 # 스프링부트의 스프링MVC
 
+### WebMvcAutoConfiguration
+- DispatcherServlet 관련 각종 빈들을 등록해주는 곳. <br/>
+- ResourceProperties도 생성하여 application.properties 설정파일을 읽어서 빈들을 만들 때 사용한다. <br/>
+
 ### resourceHandlerMapping
 - 리소스 관련 핸들러.<br/>
 - /resources/static 정적 리소스를 지원하는 기능. (이외 다른 디렉토리들도 지원.)<br/>
