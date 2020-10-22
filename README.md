@@ -51,7 +51,7 @@
 <br/><br/>
 
 ## 스프링 MVC 커스터마이징
-- application.properties
+- application.properties (가장 많이 손을 안대고 설정할 수 있는 방법.)
 - @Configuration + Implements WebMvcConfigurer<br/>
     : 스프링부트의 스프링MVC 자동설정 + 추가 설정
 - @Configuration + **_@EnableWebMvc_** + Implements WebMvcConfigurer<br/>
