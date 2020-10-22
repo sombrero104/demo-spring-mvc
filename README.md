@@ -43,6 +43,12 @@ WebMvcAutoConfiguration에는 @ConditionalOnMissingBean({WebMvcConfigurationSupp
 @EnableWebMvc는 스프링부트를 사용하지 않을 때 사용한다. <br/>
 현재 프로젝트는 스프링부트를 사용하므로 이 빈이 없을 때에 사용한다는 의미이다. <br/>
 
+## 스프링 MVC 커스터마이징
+- application.properties
+- @Configuration + Implements WebMvcConfigurer<br/>
+    : 스프링부트의 스프링MVC 자동설정 + 추가 설정
+- @Configuration + @EnableWebMvc + Implements WebMvcConfigurer<br/>
+    : 스프링부트의 스프링MVC 자동설정 사용하지 않음.
 
 <br/><br/>
 
