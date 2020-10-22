@@ -14,6 +14,8 @@ resourceHandlerMapping를 설정하면 캐싱 관련 정보들이 응답 헤더�
 
 #### ContentNegotiatingViewResolver
 본인이 직접 뷰를 처리하는게 아니라 다른 ViewResolver들에게 일 처리를 위임함.<br/>
+ContentNegotiatingViewResolver가 가지고 있는 viewResolvers 프로퍼티가<br/>
+다른 4개의 뷰리졸버들을 참조하고 있음. <br/>
 
 <br/><br/>
 
