@@ -44,7 +44,7 @@
     현재 프로젝트는 스프링부트를 사용하므로 이 빈이 없을 때에 사용한다는 의미이다. <br/>
 
 ### ResourceProperties
-<img src="./images/resource_properties.png" width="85%"><br/>
+<img src="./images/resource_properties.png" width="90%"><br/>
 - CLASSPATH_RESOURCE_LOCATIONS에 리소스 관련 경로가 들어있다.<br/>
 - '@ConfigurationProperties(prefix = "spring.resources" ...'이라고 되어있는 부분은<br/>
     application.properties에서 prefix로 앞에 'spring.resources'가 붙은 속성을 들고 온다는 의미. <br/>
