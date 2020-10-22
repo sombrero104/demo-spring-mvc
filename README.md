@@ -51,7 +51,7 @@
     @EnableWebMvc를 붙이면..<br/>
     @EnableWebMvc가 임포트하는 DelegatingWebMvcConfiguration이 <br/>
     WebMvcConfigurationSupport를 상속받고 있기 때문에<br/>
-    WebMvcConfigurationSupport 타입이 빈으로 등록이 되고, 
+    WebMvcConfigurationSupport 타입이 빈으로 등록이 되고, <br/>
     스프링부트의 웹 MVC 설정인 WebMvcAutoConfiguration의<br/>
     @ConditionalOnMissingBean({WebMvcConfigurationSupport.class}) 설정에 위배되기 때문에<br/>
     스프링부트에서 제공하는 스프링 웹 MVC 설정을 사용하지 않게 된다. <br/>
