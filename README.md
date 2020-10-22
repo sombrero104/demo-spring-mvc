@@ -47,6 +47,11 @@
     @EnableWebMvc가 임포트하는 DelegatingWebMvcConfiguration이 WebMvcConfigurationSupport를 상속받고 있다. <br/>
     @EnableWebMvc는 스프링부트를 사용하지 않을 때 사용한다. <br/>
     현재 프로젝트는 스프링부트를 사용하므로 이 빈이 없을 때에 사용한다는 의미이다. <br/>
+    만약 스프링부트에서 제공하는 웹 MVC 설정을 사용하지 않고 스프링 웹 MVC를 설정하고자 할 경우에는 @EnableWebMvc를 붙이면<br/>
+    @EnableWebMvc가 임포트하는 DelegatingWebMvcConfiguration이 WebMvcConfigurationSupport를 상속받고 있기 때문에<br/>
+    WebMvcConfigurationSupport 타입이 빈으로 등록이 되고 스프링부트의 웹 MVC 설정인 WebMvcAutoConfiguration의<br/>
+    @ConditionalOnMissingBean({WebMvcConfigurationSupport.class}) 설정에 위배되기 때문에<br/>
+    스프링부트에서 제공하는 스프링 웹 MVC 설정을 사용하지 않게 된다. <br/>
 
 ### ResourceProperties
 <img src="./images/resource_properties.png" width="90%"><br/>
