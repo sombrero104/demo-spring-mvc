@@ -47,7 +47,7 @@
 - application.properties
 - @Configuration + Implements WebMvcConfigurer<br/>
     : 스프링부트의 스프링MVC 자동설정 + 추가 설정
-- @Configuration + @EnableWebMvc + Implements WebMvcConfigurer<br/>
+- @Configuration + **_@EnableWebMvc_** + Implements WebMvcConfigurer<br/>
     : 스프링부트의 스프링MVC 자동설정 사용하지 않음.
 
 <br/><br/>
