@@ -57,6 +57,9 @@
 ### ThymeleafAutoConfiguration
 - 스프링부트 spring.factories에 포함되어 있는 타임리프 기본 설정. <br/>
 - 타임리프에서 제공하는 뷰리졸버인 thymeleafViewResolver가 빈으로 등록되어 있는 것을 확인할 수 있다.<br/>
+- ThymeleafProperties 프로퍼티즈를 사용하며,<br/>
+    @ConfigurationProperties(prefix = "spring.thymeleaf")로<br/>
+    프로퍼티즈 파일에서 prefix로 앞에 'spring.thymeleaf'가 붙은 속성을 불러와서 사용하는 것을 알 수 있다. <br/>
 
 <br/><br/>
 
