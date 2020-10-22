@@ -1,5 +1,13 @@
 
 # 스프링부트의 스프링MVC
 
+#### resourceHandlerMapping
+/resources/static 정적 리소스를 지원하는 기능. (이외 다른 디렉토리들도 지원.)<br/>
+resourceHandlerMapping를 설정하면 캐싱 관련 정보들이 응답 헤더에 추가로 추가됨.<br/>
+요청의 캐시 정보로 적절한 응답을 보낼 수 있음. <br/>
+예를 들어, 리소스가 변경되지 않았으면 not modified(304)라는 응답으로 보내서 <br/>
+브라우저가 캐싱하고 있는 리소스를 그대로 사용하도록 함. <br/>
+
+
 <br/><br/>
 
