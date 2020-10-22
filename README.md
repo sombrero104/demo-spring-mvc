@@ -9,9 +9,11 @@ resourceHandlerMapping를 설정하면 캐싱 관련 정보들이 응답 헤더�
 예를 들어, 리소스가 변경되지 않았으면 not modified(304)라는 응답으로 보내서 <br/>
 브라우저가 캐싱하고 있는 리소스를 그대로 사용하도록 함. <br/>
 
-### RequestMappingHandlerAdapter
+#### RequestMappingHandlerAdapter
 애노테이션 기반의 핸들러매핑을 처리할 수 있는 어댑터.<br/>
 
+#### ContentNegotiatingViewResolver
+본인이 직접 뷰를 처리하는게 아니라 다른 ViewResolver들에게 일 처리를 위임함.<br/>
 
 <br/><br/>
 
