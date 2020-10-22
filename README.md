@@ -18,6 +18,16 @@ ContentNegotiatingViewResolver가 가지고 있는 viewResolvers 프로퍼티가
 다른 4개의 뷰리졸버들을 참조하고 있음. <br/>
 때문에 뷰리졸버 중에 우선순위가 항상 최상위.  <br/>
 
+#### spring.factories
+/spring-boot-autoconfigure-2.3.4.RELEASE.jar!/META-INF/spring.factories<br/>
+서비스 로케이트 패턴과 비슷함. <br/>
+'org.springframework.boot.autoconfigure.EnableAutoConfiguration='에 해당하는<br/>
+모든 자동설정 파일들이 조건에 따라 적용이 됨. <br/>
+DispatcherServletAutoConfiguration은 DispatcherServlet 자동설정.<br/>
+DispatcherServlet을 만드는 코드가 담겨있다. <br/>
+ServletWebServerFactoryAutoConfiguration은 톰캣 관련 자동설정. <br/>
+WebMvcAutoConfiguration은 스프링 웹 MVC 자동설정. <br/>
+
 <br/><br/>
 
 
