@@ -53,6 +53,11 @@
 - CLASSPATH_RESOURCE_LOCATIONS에 리소스 관련 경로가 들어있다.<br/>
 - '@ConfigurationProperties(prefix = "spring.resources" ...'이라고 되어있는 부분은<br/>
     application.properties에서 prefix로 앞에 'spring.resources'가 붙은 속성을 들고 온다는 의미. <br/>
+
+### ThymeleafAutoConfiguration
+- 스프링부트 spring.factories에 포함되어 있는 타임리프 기본 설정. <br/>
+- 타임리프에서 제공하는 뷰리졸버인 thymeleafViewResolver가 빈으로 등록되어 있는 것을 확인할 수 있다.<br/>
+
 <br/><br/>
 
 ## 스프링 MVC 커스터마이징
@@ -65,10 +70,6 @@
 ### @Configuration + Implements WebMvcConfigurer
 - 스프링부트에서 제공하는 스프링MVC 기존 설정 그대로 유지하면서 추가만 하는 것. <br/>
     
-### ThymeleafAutoConfiguration
-- 스프링부트 spring.factories에 포함되어 있는 타임리프 기본 설정. <br/>
-- 타임리프에서 제공하는 뷰리졸버인 thymeleafViewResolver가 빈으로 등록되어 있는 것을 확인할 수 있다.<br/>
-
 <br/><br/>
 
 
