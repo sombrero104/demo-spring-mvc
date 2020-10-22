@@ -4,6 +4,7 @@
 ### WebMvcAutoConfiguration
 - 스프링부트에서 DispatcherServlet 관련 각종 빈들을 등록해주는 곳. <br/>
 - ResourceProperties도 생성하여 application.properties 설정파일을 읽어서 빈들을 만들 때 사용한다. <br/>
+- BeanFactory 타입의 모든 빈들을 등록해준다. <br/>
 
 ### resourceHandlerMapping
 - 리소스 관련 핸들러.<br/>
@@ -61,7 +62,13 @@
 - @Configuration + **_@EnableWebMvc_** + Implements WebMvcConfigurer<br/>
     : 스프링부트의 스프링MVC 자동설정 사용하지 않음.
     
+### @Configuration + Implements WebMvcConfigurer
+- 스프링부트에서 제공하는 스프링MVC 기존 설정 그대로 유지하면서 추가만 하는 것. <br/>
     
+### ThymeleafAutoConfiguration
+- 스프링부트 spring.factories에 포함되어 있는 타임리프 기본 설정. <br/>
+- 타임리프에서 제공하는 뷰리졸버인 thymeleafViewResolver가 빈으로 등록되어 있는 것을 확인할 수 있다.<br/>
+
 <br/><br/>
 
 
