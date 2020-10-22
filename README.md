@@ -60,6 +60,12 @@
 - ThymeleafProperties 프로퍼티즈를 사용하며,<br/>
     @ConfigurationProperties(prefix = "spring.thymeleaf")로<br/>
     프로퍼티즈 파일에서 prefix로 앞에 'spring.thymeleaf'가 붙은 속성을 불러와서 사용하는 것을 알 수 있다. <br/>
+- application.properties 파일에서 'spring.thymeleaf'를 치고 자동완성 목록을 보면<br/>
+    아래처럼 prefix와 suffix에 기본값이 설정되어 있는 것을 확인할 수 있다.<br/>
+<pre>
+spring.thymeleaf.prefix=classpath:/templates/
+spring.thymeleaf.suffix=.html
+</pre>
 
 <br/><br/>
 
