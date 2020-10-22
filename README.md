@@ -50,6 +50,12 @@
 - @Configuration + **_@EnableWebMvc_** + Implements WebMvcConfigurer<br/>
     : 스프링부트의 스프링MVC 자동설정 사용하지 않음.
 
+#### ResourceProperties
+<img src="./images/resource_properties.png" width="68%"><br/>
+CLASSPATH_RESOURCE_LOCATIONS에 리소스 관련 경로가 들어있다.<br/>
+'@ConfigurationProperties(prefix = "spring.resources" ...'이라고 되어있는 부분은<br/>
+application.properties에서 prefix로 앞에 'spring.resources'가 붙은 속성을 들고 온다는 의미. <br/>
+
 <br/><br/>
 
 
