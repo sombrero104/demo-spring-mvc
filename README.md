@@ -43,19 +43,20 @@
     @EnableWebMvc는 스프링부트를 사용하지 않을 때 사용한다. <br/>
     현재 프로젝트는 스프링부트를 사용하므로 이 빈이 없을 때에 사용한다는 의미이다. <br/>
 
+#### ResourceProperties
+<img src="./images/resource_properties.png" width="85%"><br/>
+- CLASSPATH_RESOURCE_LOCATIONS에 리소스 관련 경로가 들어있다.<br/>
+- '@ConfigurationProperties(prefix = "spring.resources" ...'이라고 되어있는 부분은<br/>
+    application.properties에서 prefix로 앞에 'spring.resources'가 붙은 속성을 들고 온다는 의미. <br/>
+
 ## 스프링 MVC 커스터마이징
 - application.properties
 - @Configuration + Implements WebMvcConfigurer<br/>
     : 스프링부트의 스프링MVC 자동설정 + 추가 설정
 - @Configuration + **_@EnableWebMvc_** + Implements WebMvcConfigurer<br/>
     : 스프링부트의 스프링MVC 자동설정 사용하지 않음.
-
-#### ResourceProperties
-<img src="./images/resource_properties.png" width="68%"><br/>
-CLASSPATH_RESOURCE_LOCATIONS에 리소스 관련 경로가 들어있다.<br/>
-'@ConfigurationProperties(prefix = "spring.resources" ...'이라고 되어있는 부분은<br/>
-application.properties에서 prefix로 앞에 'spring.resources'가 붙은 속성을 들고 온다는 의미. <br/>
-
+    
+    
 <br/><br/>
 
 
