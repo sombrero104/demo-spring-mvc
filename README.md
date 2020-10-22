@@ -28,6 +28,22 @@ DispatcherServlet을 만드는 코드가 담겨있다. <br/>
 ServletWebServerFactoryAutoConfiguration은 톰캣 관련 자동설정. <br/>
 WebMvcAutoConfiguration은 스프링 웹 MVC 자동설정. <br/>
 
+#### 스프링부트 애플리케이션 타입 3가지
+Servlet(Web), WebFlux(Web), Non web  <br/>
+
+#### @ConditionalOnClass({ ... })
+@ConditionalOnClass에 설정된 클래스가 클래스패스에 있는 경우 사용하라는 의미.  <br/>
+
+#### @ConditionalOnMissingBean({ ... })
+@ConditionalOnMissingBean에 설정된 클래스 타입의 빈이 없는 경우 사용하라는 의미. <br/>
+예를 들어, <br/>
+WebMvcAutoConfiguration에는 @ConditionalOnMissingBean({WebMvcConfigurationSupport.class})이<br/>
+설정되어 있는데, WebMvcConfigurationSupport에 해당하는 빈이 없어야만 사용한다는 의미이다. <br/>
+@EnableWebMvc가 임포트하는 DelegatingWebMvcConfiguration이 WebMvcConfigurationSupport를 상속받고 있다. <br/>
+@EnableWebMvc는 스프링부트를 사용하지 않을 때 사용한다. <br/>
+현재 프로젝트는 스프링부트를 사용하므로 이 빈이 없을 때에 사용한다는 의미이다. <br/>
+
+
 <br/><br/>
 
 
