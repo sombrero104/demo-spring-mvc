@@ -83,6 +83,8 @@ spring.thymeleaf.suffix=.html
     : 스프링부트의 스프링MVC 자동설정 + 추가 설정
 - @Configuration + **_@EnableWebMvc_** + Implements WebMvcConfigurer<br/>
     : 스프링부트의 스프링MVC 자동설정 사용하지 않음.
+- WebMvcConfigurer로도 커스터마이징이 어려울 경우,<br/>
+    @Bean으로 MVC 구성 요소 직접 등록. 
     
 ### @Configuration + Implements WebMvcConfigurer
 - 스프링부트에서 제공하는 스프링MVC 기존 설정 그대로 유지하면서 추가만 하는 것. <br/>
